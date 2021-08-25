@@ -11,3 +11,19 @@ To use, download a CSV statement from the [Schwab website](https://www.schwab.co
 
 ## Cash
 To use, download a CSV statement from the [Cash App website](https://cash.app/).
+=======
+```
+$ python venmo-to-ynab.py your_statement.csv
+```
+
+## Schwab
+To use, download a CSV statement from the [Schwab website](https://www.schwab.com/).
+```
+$ python schwab-to-ynab.py your_statement.csv
+```
+
+## Cash
+To use, download a CSV statement from the [Cash App website](https://cash.app/).
+```
+$ python cash-to-ynab.py your_statement.csv
+```
