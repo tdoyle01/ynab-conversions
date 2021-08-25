@@ -16,4 +16,3 @@ with open(file, 'r') as csvin, open(sys.argv[1] + "-ynab" + '.csv',  'a', newlin
 	for row in rows:
 		csvout.writerow([row[0], row[3], row[4], row[5]])
 	print("Converted!")
-	
