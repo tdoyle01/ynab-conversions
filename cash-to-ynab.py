@@ -19,6 +19,8 @@ with open(file, 'r') as csvin, open(sys.argv[1] + "-ynab" + '.csv',  'a', newlin
 		date = row[1].replace(" ", "")[:10]
 		payee = row[12]
 		memo = row[11]
+		if payee == "":
+			payee = memo
 		amount = row[6]
 		dollar_amount_stripped = amount.replace("$", "").replace(",", "").replace(" ", "")
 		decimal_amount = Decimal(dollar_amount_stripped)
