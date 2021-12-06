@@ -21,6 +21,7 @@ with open(file, 'r') as csvin, open(sys.argv[1] + "-ynab" + '.csv',  'a', newlin
 		memo = row[11]
 		if payee == "":
 			payee = memo
+			memo = ""
 		amount = row[6]
 		dollar_amount_stripped = amount.replace("$", "").replace(",", "").replace(" ", "")
 		decimal_amount = Decimal(dollar_amount_stripped)
